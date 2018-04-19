@@ -13,6 +13,11 @@ atom-text-editor .cursor {
   background-color: inherit;
 }
 
+.tab-bar .tab.modified:hover .close-icon {
+  color: darkorchid;
+  background-color: inherit;
+}
+
 atom-pane.active .tab.active:before {
   background: darkorchid;
 }
@@ -79,4 +84,30 @@ atom-text-editor[mini].is-focused {
 .settings-view .alert-info {
   color: #d3bff8;
   background-color: #3c2546;
+}
+
+.btn.selected, .btn.btn-default.selected {
+    background: darkorchid;
+}
+
+.btn.selected:hover, .btn.btn-default.selected:hover {
+    background: #a147ce;
+}
+
+.btn-group > .btn.selected:focus {
+  border-color: darkorchid;
+  box-shadow: inset 0 0 0 1px rgba(24, 26, 31, 0.5), 0 0 0 1px darkorchid;
+}
+
+.btn.selected:focus, .btn.btn-default.selected:focus, .btn.selected:hover, .btn.btn-default.selected:hover {
+  background: darkorchid;
+}
+
+.btn-group > .btn.btn:focus {
+  border-color: black;
+  box-shadow: 0 0 0 1px darkorchid;
+}
+
+.github-StagingView:focus .github-StagingView-group.is-focused .is-selected {
+  background: darkorchid;
 }
